@@ -15,6 +15,14 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Platform
+MSMSTEPPE := holi
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
+# Treble flag
+PRODUCT_PRODUCT_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE := true
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
