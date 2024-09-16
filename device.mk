@@ -600,6 +600,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libcrypto-v33 \
+    libutilscallstack.vendor:64 \
+    libnetutils.vendor:64 \
+    libsqlite.vendor:64 \
+    libprocessgroup.vendor \
+    libjsoncpp.vendor \
+    libcurl.vendor \
+    libpng.vendor:32
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
